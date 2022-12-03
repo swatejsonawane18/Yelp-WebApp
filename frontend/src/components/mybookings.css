@@ -1,0 +1,45 @@
+.booking-button{
+    border-radius: 10px;
+    border-color: black;
+}
+.search-button{
+    border-radius: 10px;
+    border-color: none !important;
+}
+
+.booking_table{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.class_for_hover:hover{
+    background-color: rgb(175, 173, 173);
+}
+
+.table{
+    padding: 10px;
+}
+.delete_button{
+    cursor: pointer;
+    color: black;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.noresult{
+    display: inline-block;
+    background-color: white;
+    color: red;
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  @media (max-width:600px){
+    .noresult{
+        width: 200px;
+    }
+  }
