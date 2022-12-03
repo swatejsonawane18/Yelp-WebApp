@@ -21,7 +21,7 @@ function App(){
       <BrowserRouter>
       <Navbar/>
       <LoadScript
-          googleMapsApiKey={"AIzaSyAec1VGFhOil-V0lPLp-z7dhEBsMf5-Fes"}
+          googleMapsApiKey={"GCloudApiKey"}
           >
         <Routes>
             <Route path="/search" element={<SearchBox reservations={reservations} setReservation={setReservation}/> } />

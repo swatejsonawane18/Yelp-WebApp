@@ -11,7 +11,7 @@ app.get('/autocomplete', async function(request, response, next) {
 
   let resp=await axios.get("https://api.yelp.com/v3/autocomplete", {
     // signal,
-    headers: {'Authorization': 'Bearer 3043hO_hJu-hVga9h2EfBsgt0uQxL7beuhMIWDyIGpYMJQESPJ_xTE2rnCCcHJbNR7ehwtp4FDXLiEgQ9BKt-4jL2mnAT08HgF1eFyRC2Ek6z3l1cPfWIVxwZF4qY3Yx'},
+    headers: {'Authorization': 'Bearer GCloudApiKey'},
      params: {'text':request.query.keyword}
   })
   response.send(resp.data);
@@ -32,7 +32,7 @@ app.get('/googlelocation', async function(request, response, next) {
 
   console.log(request.query.user_location);
     
-  let resp = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${request.query.user_location}&key=AIzaSyAec1VGFhOil-V0lPLp-z7dhEBsMf5-Fes`);
+  let resp = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${request.query.user_location}&key=GCloudApiKey`);
     console.log(resp.data);
 
   response.send(resp.data);
@@ -42,7 +42,7 @@ app.get('/card_business', async function(request, response, next) {
 
     
   let resp = await axios.get(`https://api.yelp.com/v3/businesses/${request.query.id}`,{
-  headers: {'Authorization': 'Bearer 3043hO_hJu-hVga9h2EfBsgt0uQxL7beuhMIWDyIGpYMJQESPJ_xTE2rnCCcHJbNR7ehwtp4FDXLiEgQ9BKt-4jL2mnAT08HgF1eFyRC2Ek6z3l1cPfWIVxwZF4qY3Yx'},
+  headers: {'Authorization': 'Bearer GCloudApiKey'},
   });
    
   response.send(resp.data);
@@ -51,7 +51,7 @@ app.get('/card_business', async function(request, response, next) {
 app.get('/card_reviews', async function(request, response, next){
 
   let resp = await axios.get(`https://api.yelp.com/v3/businesses/${request.query.id}/reviews`,{
-  headers: {'Authorization': 'Bearer 3043hO_hJu-hVga9h2EfBsgt0uQxL7beuhMIWDyIGpYMJQESPJ_xTE2rnCCcHJbNR7ehwtp4FDXLiEgQ9BKt-4jL2mnAT08HgF1eFyRC2Ek6z3l1cPfWIVxwZF4qY3Yx'},
+  headers: {'Authorization': 'Bearer GCloudApiKey'},
   });
   response.send(resp.data);
 })
@@ -66,7 +66,7 @@ app.get('/business_search', async function(req, res, next) {
     let longitude=parseFloat(req.query.longitude);
 
     let resp2 = await axios.get('https://api.yelp.com/v3/businesses/search',{headers: {
-        'Authorization': 'Bearer 3043hO_hJu-hVga9h2EfBsgt0uQxL7beuhMIWDyIGpYMJQESPJ_xTE2rnCCcHJbNR7ehwtp4FDXLiEgQ9BKt-4jL2mnAT08HgF1eFyRC2Ek6z3l1cPfWIVxwZF4qY3Yx'
+        'Authorization': 'Bearer GCloudApiKey'
         },
       params: {
           'term': keyword, 
