@@ -1,0 +1,107 @@
+@media (max-width:600px){
+    .box-style-for-tabs{
+        display: block;
+        justify-content: center;
+        
+    }
+    .card_div{
+        max-width: 375px !important;
+    }
+}
+
+.MuiTabPanel-root {
+    padding: 0px !important;
+    
+}
+
+.box-style-for-tabs{
+    display: flex;
+    justify-content: center;
+    background-color: #f8d95d;
+}
+
+#mui-p-85935-P-3{
+    padding:none;
+}
+
+.outer_card{
+    padding-bottom: 100px;
+}
+
+.trofreview{
+    text-align: left;
+}
+
+.table{
+    padding: none;
+    /* box-shadow: none; */
+}
+
+.pofreview{
+    padding: none;
+    box-shadow: none;
+}
+
+.review_card .table>:not(caption)>*>*{
+    padding: 0px !important;
+}
+
+#card_form{
+    padding-bottom: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(4 0 0 / 10%) !important;
+}
+
+.card_div{
+    position: relative;
+    text-align: left;
+    max-width: 850px;
+    height: auto;
+    background-color: white;
+    margin:auto ;
+    border-radius: 20px;
+}
+
+.backbutton{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.card_tab{
+    text-align: center;
+}
+
+.status_open{
+    color: green;
+    
+}
+.status_closed{
+    color: red;
+   
+}
+
+.fa-twitter{
+    color: #00acee;
+    padding: 2px;
+    padding-bottom: 0px;
+}
+.fa-facebook-f{
+    color: blue;
+    padding: 2px;
+    padding-bottom: 0px;
+}
+
+.cara-image{
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: black !important;
+}
+.css-1q2h7u5.Mui-selected {
+    color: black !important;
+}

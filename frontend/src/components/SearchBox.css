@@ -1,0 +1,52 @@
+
+.booking-button{
+    border-radius: 10px;
+    border-color: none !important;
+}
+.search-button{
+    border-radius: 10px;
+    border-color: black;
+}
+
+.outer-auto-options{
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+} 
+.auto-options.form-control{
+    padding: 0px !important;
+}
+.option_hover:hover{
+    background-color: rgb(226, 225, 225);
+}
+.option_hover{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.auto-options{
+    z-index: 999;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: auto !important;
+    
+    background-color: white;
+    max-height: 220px;
+    height:auto !important;
+    
+}
+
+
+
+.card{
+    border: 5px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    max-width: 600px;
+    border: 1px solid rgb(175, 175, 175); 
+}
+.banner_label:after {
+    content:"*";
+    color: rgb(234, 143, 143);
+  }
+

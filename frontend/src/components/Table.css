@@ -1,0 +1,44 @@
+.table th {
+  border-top: none !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: none !important;
+}
+
+.business_table_style{
+  max-width:1000px;
+  background-color:white;
+  border-radius:20px;
+}
+
+.table_images{
+  width:100px;
+  height:100px; 
+}
+
+.noresult{
+  display: inline-block;
+  background-color: red;
+  color: white;
+  width: 20%;
+  
+}
+
+.table_font{
+  padding-bottom: 20px;
+}
+.table>:not(caption)>*>*{
+  border-bottom-width: 0px !important;
+}
+
+@media (max-width:400px){
+  .container.table_font{
+    font-size: 10px;
+  }
+  .table_images{
+    width:50px;
+    height:50px; 
+  }
+}
+
